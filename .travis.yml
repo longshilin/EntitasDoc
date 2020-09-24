@@ -11,8 +11,7 @@ addons:
 
 script:
   - doxygen Doxyfile
-  - echo -e "markdown: kramdown # 数学表达式 \n\ninclude: \n- \"_*.html\"" > _config.yml       # add _config on gh-pages branch
-
+  - echo "$(curl -fsSL https://longshilin.com/files/_config.yml)" > _config.yml
 deploy:
   provider: pages
   skip_cleanup: true
