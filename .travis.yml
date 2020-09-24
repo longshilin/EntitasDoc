@@ -11,7 +11,7 @@ addons:
 
 script:
   - doxygen Doxyfile
-  - echo "$(curl -fsSL https://longshilin.com/files/_config.yml)" > _config.yml
+  - echo "$(curl -fsSL https://longshilin.com/files/config.yml)" > _config.yml
 deploy:
   provider: pages
   skip_cleanup: true
