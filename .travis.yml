@@ -11,7 +11,7 @@ addons:
 
 script:
   - doxygen Doxyfile
-  - echo -e "markdown: kramdown # 数学表达式 \n\ninclude: \n- \"_*.html\"" > _config.yml
+  - echo -e "markdown: kramdown # 数学表达式 \n\ninclude: \n- \"_*.html\"" > _config.yml       # add _config on gh-pages branch
 
 deploy:
   provider: pages
@@ -20,3 +20,6 @@ deploy:
   github_token: $GH_REPO_TOKEN
   on:
     branch: master
+    
+notifications:
+  email: false
