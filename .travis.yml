@@ -11,6 +11,7 @@ addons:
 
 script:
   - doxygen Doxyfile
+  - echo -e "markdown: kramdown # 数学表达式 \n\ninclude: \n- \"_*.html\"" > _config.yml
 
 deploy:
   provider: pages
